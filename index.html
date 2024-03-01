@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charser="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Introducción a HTML</title>
+</head>
+<body style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+	<div class="IntroduccionHtml" style="background-color: lightblue;">
+		<h1>Introducción a html</h1>
+		<h2>¿Qué es HTML?</h2>
+		<ul>
+		  <li>Estándar para Lenguaje de Híper Texto de maquetado o  Hyper Text Markup Language</li>
+		  <li>Describe la estructura de las páginas web</li>
+		  <li>Consiste en elementos</li>
+		  <li>Estos elementos le dicen al navegador como mostrar el contenido</li>
+		  <li>Los elementos son etiquetas con contenido</li>
+		</ul>
+	</div>
+	<div class="ElementosExplicados" style="background-color: lightcoral;">
+		<h2>Elementos básicos explicados</h2>
+		<ol>
+		  <li>La etiqueta "DOCTYPE" declara el documento como HTML</li>
+		  <li>La etiqueta "html" es el elemento principal de una página HTML</li>
+		  <li>La etiqueta "head" contiene información adicional acerca de la página HTML</li>
+		  <li>La etiqueta "title" especifica el título de la pagina HTML</li>
+		  <li>La etiqueta "body" especifica el cuerpo de la página web (todos los elementos visibles)</li>
+		  <li>La etiqueta "h1" define el texto como un título</li>
+		  <li>La etiqueta "h2" define el texto como un subtítulo</li>
+		  <li>La etiqueta "p" define el tamaño del texto como párrafo</li>
+		</ol>
+	</div>
+	<div class="ElementoHTML" style="background-color: lightcyan;">
+		<h2>¿Qué es un elemento HTML?</h2>
+		Un elemento HTML está definido por una etiqueta de inicio, seguido de algún contenido y una etiqueta de finalización.
+		<ul>
+			<li>&lt;nombreEtiqueta&gt;: etiqueta de inicio</li>
+			<li>Contenido: entre la etiqueta de inicio y la etiqueta de finalización</li>
+			<li>&lt;/nombreEtiquta&gt;: etiqueta de finalización</li>
+		</ul>
+	</div>
+	<div class="Atributos" style="background-color: lightgoldenrodyellow;">
+		<h2>Atributos HTML</h2>
+		Los Atributos HTML proporcionan información adicional acerca de los elementos HTML (siempre son especificados en la etiqueta de inicio)
+		& lt ; se utiliza para menor que, & gt ; se utiliza para mayor que.
+		<ul>
+			<a href="https://youtube.com/"><img src="piolinSanValentin.jpg" style="width: 300px; display: block; margin-left: auto; margin-right: auto;"></a>		
+		</ul>
+	</div>
+	<div class="ElementosFormato" style="background-color: lightgreen;">
+		<h1>Elementos de Formato</h1>
+		<ul>
+			<li>&lt;b&gt;Un texto en negritas&lt;/b&gt;: <b>texto en negritas</b></li>
+			<li>&lt;strong&gt;Un texto en negritas&lt;/strong&gt;: <strong>texto en negritas</strong></li>
+			<li>&lt;i&gt;Texto italico&lt;/i&gt;: <i>Texto italico</i></li>
+			<li>&lt;mark&gt;Texto resaltado&lt;/mark&gt;: <mark>Texto resaltado</mark></li>
+		</ul>
+	</div>
+	<div class="EstilosHTML" style="background-color: lightsalmon;">
+		<h2>Estilos en HTML</h2>
+		<p>
+			Los estilos en HTML son Atributos usados para añadir diseño a las etiquetas HTML, así como color, tamaño y más.
+			<h3>Estructura de Atributo de Estilos</h3>
+			Configurar el estilo en un elemento HTML se realiza utilizando el atributo HTML <mark>style</mark>
+			<br><br>
+			&lt;tagname style ="property: value; property2: value"&gt; Contenido &lt;/tagname&gt;
+			<br>
+			<p style="color: rgb(4, 0, 255); background-color: rgb(0, 225, 255); font-size: 20px; font-family: cursive; text-align: center;">
+				Configurar el estilo en un elemento HTML se realiza utilizando el atributo HTML
+			</p>
+		</p> 
+	</div>
+	<div class="Etiqueta" style="background-color: lightseagreen;">
+		<h1>Etiqueta &lt;map&gt;</h1>
+		<p>
+			La etiquta &lt;map&gt; define el mapa de una imagen. Una imagen mapeada es una imagen que tiene distintas areas detectables por el navegador, <br>
+			logrando de manera independiente cada una de las areas.
+
+			La etiqueta <strong>&lt;map&gt;</strong> define las areas de la imagen mediante la etiqueta &lt;area&gt; con los atributos HTML "shape", <br>
+			que define la forma del area señalada en la imagen, "coords" que define las coordenadas de cada uno de los puntos e la shape, "href" <br>
+			que puede definir un hipervínclulo para cada una de las areas
+ 
+			<br><br>Ejemplo:
+
+			<br><br>&lt;img src="workflow.jpg"usemap="#workmap"&gt;
+			<br>&lt;map name="workmap"&gt;
+			<br>&lt;area shape ="rect" coord="34,44,270,350" href="pagina1.com"&gt;
+			<br>&lt;area shape ="circle" coord ="200,172,333,250" href = "pagina2.com"&gt;
+			<br>&lt;/map&gt; 
+		</p>
+	</div>
+	<div class="TableHTML" style="background-color: lightsteelblue;">
+		<h1>Elemento Table en HTML</h1>
+			La etiquta <strong>&lt;table&gt;</strong> permite colocar los datos en filas y columnas usando sus derivaciones <strong>&lt;tr&gt;</strong> para definir una fila (table row), <br>
+			<strong>&lt;th&gt;</strong> para definir los encabezados de la tabla (table header) y <strong>&lt;td&gt;</strong> para asignar valores a las filas correspondientes a los encabezados de <br>
+			las columnas (table data).
+
+			<!--tr son las celdas-->
+			<br><br>
+			Ejemplo:
+			<br><br>
+			&lt;table&gt;<br><br>
+				&lt;tr&gt;<br>
+					&lt;th&gt;Nombre&lt;/th&gt;<br>
+					&lt;th&gt;Apellido&lt;/th&gt;<br>
+					&lt;th&gt;Edad&lt;/th&gt;<br>
+					&lt;th&gt;Dirección&lt;/th&gt;<br>
+				&lt;/tr&gt;<br><br>
+				&lt;tr&gt;<br>
+					&lt;td&gt;Eduardo&lt;/td&gt;<br>
+					&lt;td&gt;Campos&lt;/td&gt;<br>
+					&lt;td&gt;18&lt;/td&gt;<br>
+					&lt;td&gt;Calle 28 #3 Col. Arboledas Querétaro&lt;/td&gt;<br>
+				&lt;/tr&gt;<br><br>
+				&lt;tr&gt;<br>
+					&lt;td&gt;Ashley&lt;/td&gt;<br>
+					&lt;td&gt;Morales&lt;/td&gt;<br>
+					&lt;td&gt;22&lt;/td&gt;<br>
+					&lt;td&gt;Calle Rios Norte #12A Viñedos Querétaro&lt;/td&gt;<br>
+			&lt;/table&gt;	
+	</div>
+	<div class="ElementoDIV" style="background-color: lightyellow;">
+		<h2>Elemento HTML "DIV"</h2>
+		La etiqueta &lt;div&gt; es un evento que toma el ancho de la pagina por defecto y realiza automáticamente un salto de línea después de cada elemento.<br>
+		<mark>&lt;div&gt;</mark> se puede interpretar como un contenedor de elementos HTML.
+		&lt;div&gt;
+		&lt;h1&gt;Título&lt;/h1&gt;
+		&lt;p&gt;Texto interesanta para el título&lt;/p&gt;
+		&lt;img src ="perrito.png" style = "width: 150px; height: 350px"&gt;
+		&lt;/div&gt;
+	</div>
+
+	<div class="EjemploDIV" style="background-color: lightslategray; width: 300px;">
+		<ul>
+			<li>Elemento 1</li>
+			<li>Elemento 2</li>
+			<li><div style="background-color: lightgrey; width: 90px;">Elemento 3</div></li>
+		</ul>
+	</div>
+	
+</body>
+</html>
